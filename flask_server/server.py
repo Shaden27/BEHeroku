@@ -1,5 +1,3 @@
-
-
 from fileinput import filename
 from multiprocessing.dummy import Process
 from flask import Flask, request, redirect,send_file,jsonify,send_from_directory,render_template
