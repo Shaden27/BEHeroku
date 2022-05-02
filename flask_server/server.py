@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 import json
 import os
 import firebase_admin
-import pyrebase
+#import pyrebase
 from firebase_admin import credentials
 from firebase_admin import firestore
 from flask_mail import Mail
@@ -648,7 +648,9 @@ def sendScan1():
 
 
 if __name__=="__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
 
 
     
